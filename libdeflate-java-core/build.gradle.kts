@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "org.powernukkitx"
-version = "0.0.3.PNX-SNAPSHOT"
+version = "0.0.3.PNX-LevelDB-1-SNAPSHOT"
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0")

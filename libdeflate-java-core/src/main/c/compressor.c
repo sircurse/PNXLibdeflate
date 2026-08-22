@@ -100,7 +100,7 @@ LIBDEFLATEJAVA_PUBLIC JNIEXPORT jlong JNICALL Java_cn_powernukkitx_libdeflate_Li
     }
 
     jbyte *inBytes = (*env)->GetPrimitiveArrayCritical(env, in, 0);
-    if (outBytes == NULL) {
+    if (inBytes == NULL) {
         // out of memory
         return -1;
     }

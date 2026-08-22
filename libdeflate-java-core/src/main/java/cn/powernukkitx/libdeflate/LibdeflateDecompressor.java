@@ -182,11 +182,17 @@ public class LibdeflateDecompressor implements Closeable, AutoCloseable {
             }
         }
 
+        if (outRealSize < 0) {
+            return outRealSize;
+        }
+
         if (uncompressedSize != -1) {
             outRealSize = uncompressedSize;
         }
+
         out.position((int) (out.position() + outRealSize));
         in.position((int) (in.position() + this.readStreamBytes()));
+
         return outRealSize;
     }
 
